@@ -10,7 +10,6 @@
 		249BA9AC5BC8C073F6388904 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A202251ABBBFD85E040C334E /* libPods.a */; };
 		428160AF1AC94D8D00BB0235 /* aboutACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428160AE1AC94D8D00BB0235 /* aboutACViewController.m */; };
 		42BFAEA51AD922A400873E25 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BFAEA41AD922A400873E25 /* EventViewController.m */; };
-		42BFAEA81AD9247D00873E25 /* EventContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BFAEA71AD9247D00873E25 /* EventContentTableViewCell.m */; };
 		42E177B71AC79FE8007BBB0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E177B61AC79FE8007BBB0A /* main.m */; };
 		42E177BA1AC79FE8007BBB0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E177B91AC79FE8007BBB0A /* AppDelegate.m */; };
 		42E177BD1AC79FE8007BBB0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E177BC1AC79FE8007BBB0A /* ViewController.m */; };
@@ -20,6 +19,7 @@
 		42E177D11AC79FE8007BBB0A /* _329AlphaCampAPPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E177D01AC79FE8007BBB0A /* _329AlphaCampAPPTests.m */; };
 		42E177DC1AC8E52E007BBB0A /* ClassTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E177DB1AC8E52E007BBB0A /* ClassTableViewController.m */; };
 		42E970A31AF0FC8D002C15F9 /* EventButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E970A21AF0FC8D002C15F9 /* EventButton.m */; };
+		42E970D81AF2529D002C15F9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E970D71AF2529D002C15F9 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,6 @@
 		428160AE1AC94D8D00BB0235 /* aboutACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aboutACViewController.m; sourceTree = "<group>"; };
 		42BFAEA31AD922A400873E25 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
 		42BFAEA41AD922A400873E25 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
-		42BFAEA61AD9247D00873E25 /* EventContentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventContentTableViewCell.h; sourceTree = "<group>"; };
-		42BFAEA71AD9247D00873E25 /* EventContentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventContentTableViewCell.m; sourceTree = "<group>"; };
 		42E177B11AC79FE8007BBB0A /* 0329AlphaCampAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 0329AlphaCampAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E177B51AC79FE8007BBB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42E177B61AC79FE8007BBB0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,6 +55,8 @@
 		42E177DB1AC8E52E007BBB0A /* ClassTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTableViewController.m; sourceTree = "<group>"; };
 		42E970A11AF0FC8D002C15F9 /* EventButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventButton.h; sourceTree = "<group>"; };
 		42E970A21AF0FC8D002C15F9 /* EventButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventButton.m; sourceTree = "<group>"; };
+		42E970D61AF2529D002C15F9 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		42E970D71AF2529D002C15F9 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		A202251ABBBFD85E040C334E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB5B84D16F2A2BB126B9125 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,8 +110,6 @@
 		42BFAEA91AD9248600873E25 /* EventView */ = {
 			isa = PBXGroup;
 			children = (
-				42BFAEA61AD9247D00873E25 /* EventContentTableViewCell.h */,
-				42BFAEA71AD9247D00873E25 /* EventContentTableViewCell.m */,
 				42BFAEA31AD922A400873E25 /* EventViewController.h */,
 				42BFAEA41AD922A400873E25 /* EventViewController.m */,
 			);
@@ -146,6 +144,7 @@
 				42E177BB1AC79FE8007BBB0A /* ViewController.h */,
 				42E177BC1AC79FE8007BBB0A /* ViewController.m */,
 				42E177BE1AC79FE8007BBB0A /* Main.storyboard */,
+				42E970D91AF252A5002C15F9 /* LoginView */,
 				428160AC1AC94D6600BB0235 /* AboutAC */,
 				428160AB1AC94D5700BB0235 /* ClassView */,
 				42BFAEA91AD9248600873E25 /* EventView */,
@@ -182,6 +181,15 @@
 				42E177CF1AC79FE8007BBB0A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42E970D91AF252A5002C15F9 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				42E970D61AF2529D002C15F9 /* LoginViewController.h */,
+				42E970D71AF2529D002C15F9 /* LoginViewController.m */,
+			);
+			name = LoginView;
 			sourceTree = "<group>";
 		};
 		4580DA07EFF1CF0CF400B821 /* Frameworks */ = {
@@ -327,12 +335,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42E970D81AF2529D002C15F9 /* LoginViewController.m in Sources */,
 				428160AF1AC94D8D00BB0235 /* aboutACViewController.m in Sources */,
 				42E177BD1AC79FE8007BBB0A /* ViewController.m in Sources */,
 				42E177BA1AC79FE8007BBB0A /* AppDelegate.m in Sources */,
 				42BFAEA51AD922A400873E25 /* EventViewController.m in Sources */,
 				42E177DC1AC8E52E007BBB0A /* ClassTableViewController.m in Sources */,
-				42BFAEA81AD9247D00873E25 /* EventContentTableViewCell.m in Sources */,
 				42E970A31AF0FC8D002C15F9 /* EventButton.m in Sources */,
 				42E177B71AC79FE8007BBB0A /* main.m in Sources */,
 			);

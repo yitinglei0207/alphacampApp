@@ -7,7 +7,6 @@
 //
 
 #import "EventViewController.h"
-#import "EventContentTableViewCell.h"
 #import <Parse/Parse.h>
 #import "EventButton.h"
 

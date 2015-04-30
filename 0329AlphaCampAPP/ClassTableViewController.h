@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ClassTableViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
-@property (nonatomic)NSInteger rowNumberOfTableView;
 
 @end
