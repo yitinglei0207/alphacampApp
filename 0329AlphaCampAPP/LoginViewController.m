@@ -47,23 +47,32 @@
         UITabBarController *tabBarView = [self.storyboard instantiateViewControllerWithIdentifier:@"tabBarController"];
         [tabBarView setSelectedIndex:0];
         [self presentViewController:tabBarView animated:YES completion:nil];
+        
         //receive the token
-        self.authToken = [NSString stringWithFormat:(@"%@",responseObject[@"auth_token"])];
+        self.authToken = [NSString stringWithFormat:@"%@",responseObject[@"auth_token"]];
+        
+        //save web info to userdefault
+        NSUserDefaults *userInfo = [NSUserDefaults standardUserDefaults];
+        [userInfo setObject:_authToken forKey:@"auth_token"];
+        [userInfo setObject:_emailText.text forKey:@"userName"];
+        [userInfo setObject:_passwordText.text forKey:@"password"];
+        [userInfo synchronize];
         
     }
           failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+              NSLog(@"%@",error);
               
           }];
     
 }
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
