@@ -130,7 +130,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Aei-Db-AzY">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="oix-CG-gnw" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarController" automaticallyAdjustsScrollViewInsets="NO" id="oix-CG-gnw" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="qOJ-2Y-QWA">
@@ -185,11 +185,11 @@
             </objects>
             <point key="canvasLocation" x="694" y="366"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tVQ-5F-mP6">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ppr-cu-nhx" sceneMemberID="firstResponder"/>
-                <viewController id="Q5J-X0-WYd" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="Q5J-X0-WYd" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Epd-0c-cTf"/>
                         <viewControllerLayoutGuide type="bottom" id="dTJ-CR-jdr"/>
@@ -252,9 +252,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="iVB-4Z-xPd"/>
                     <connections>
-                        <outlet property="emailText" destination="O9U-Ep-83O" id="x7T-Rc-gLw"/>
-                        <outlet property="loginButton" destination="bZ8-eg-sul" id="bs8-wC-wJH"/>
-                        <outlet property="passwordText" destination="rFc-Yt-9DE" id="pX0-1r-L5c"/>
+                        <outlet property="emailText" destination="O9U-Ep-83O" id="ueY-7Z-IXC"/>
+                        <outlet property="loginButton" destination="bZ8-eg-sul" id="68B-3O-Q0I"/>
+                        <outlet property="passwordText" destination="rFc-Yt-9DE" id="5bw-QF-pAQ"/>
                     </connections>
                 </viewController>
             </objects>
@@ -262,7 +262,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="alpha-logo-long" width="836" height="201"/>
+        <image name="alpha-logo-long" width="278" height="67"/>
         <image name="class" width="30" height="30"/>
         <image name="event" width="30" height="30"/>
         <image name="profile" width="30" height="30"/>

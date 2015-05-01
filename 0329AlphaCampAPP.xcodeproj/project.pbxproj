@@ -57,6 +57,7 @@
 		42E970A21AF0FC8D002C15F9 /* EventButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventButton.m; sourceTree = "<group>"; };
 		42E970D61AF2529D002C15F9 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		42E970D71AF2529D002C15F9 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		42E970DA1AF2574B002C15F9 /* ApiKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiKey.h; sourceTree = "<group>"; };
 		A202251ABBBFD85E040C334E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB5B84D16F2A2BB126B9125 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +154,7 @@
 				42E177B41AC79FE8007BBB0A /* Supporting Files */,
 				42E970A11AF0FC8D002C15F9 /* EventButton.h */,
 				42E970A21AF0FC8D002C15F9 /* EventButton.m */,
+				42E970DA1AF2574B002C15F9 /* ApiKey.h */,
 			);
 			path = 0329AlphaCampAPP;
 			sourceTree = "<group>";
