@@ -29,6 +29,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)loginButtonPressed:(id)sender {
+    [self networkingStart];
+    
+}
 
 
 - (void) networkingStart{
@@ -61,7 +65,13 @@
     }
           failure:^(AFHTTPRequestOperation *operation, NSError *error) {
               NSLog(@"%@",error);
-              
+              UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"login failed" message:nil preferredStyle:UIAlertControllerStyleAlert];
+              UIAlertAction *action = [UIAlertAction actionWithTitle:@"Please login again" style:UIAlertViewStyleDefault handler:^(UIAlertAction *action) {
+                  _passwordText.text = @"";
+                  //_emailText.text = @"";
+              }];
+              [alert addAction:action];
+              [self presentViewController:alert animated:YES completion:nil];
           }];
     
 }

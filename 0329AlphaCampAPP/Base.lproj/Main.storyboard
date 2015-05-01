@@ -188,7 +188,6 @@
         <!--Login View Controller-->
         <scene sceneID="tVQ-5F-mP6">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ppr-cu-nhx" sceneMemberID="firstResponder"/>
                 <viewController id="Q5J-X0-WYd" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Epd-0c-cTf"/>
@@ -206,6 +205,9 @@
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="Q5J-X0-WYd" eventType="touchUpInside" id="Zyw-Cx-qeu"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alpha-logo-long" translatesAutoresizingMaskIntoConstraints="NO" id="Rcs-Rx-BBA">
                                 <rect key="frame" x="40" y="70" width="240" height="59"/>
@@ -221,7 +223,7 @@
                                     <constraint firstAttribute="height" constant="30" id="C6J-95-LBs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwaord" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rFc-Yt-9DE">
                                 <rect key="frame" x="16" y="239" width="288" height="30"/>
@@ -229,7 +231,7 @@
                                     <constraint firstAttribute="height" constant="30" id="rgb-QL-88B"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -257,6 +259,7 @@
                         <outlet property="passwordText" destination="rFc-Yt-9DE" id="5bw-QF-pAQ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ppr-cu-nhx" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-186" y="-827"/>
         </scene>
