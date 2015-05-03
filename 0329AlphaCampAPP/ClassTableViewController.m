@@ -87,7 +87,7 @@ UIActionSheetDelegate>
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return @"測試沙箱Bootcamp";
+    return _classTitle;
 }
 
 - (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section
@@ -119,6 +119,14 @@ UIActionSheetDelegate>
 }
 
 - (IBAction)couseSelect:(id)sender {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    NSString *authToken = [NSString stringWithFormat:@"%@",[userDefault stringForKey:@"auth_token"]];
+    
+    NSDictionary *userParameters = @{
+                                     @"api_key": api_key,
+                                     @"auth_token": authToken
+                                     };
     
 }
 
